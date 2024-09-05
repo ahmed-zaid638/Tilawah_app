@@ -36,17 +36,17 @@ This project is an interactive Quran platform that allows users to read and list
 ## 🛠️ Tech Stack
 
 ### Client:
-- ⚛️ **React**: Frontend framework for building UI components.
-- 🚀 **Vite**: For fast development and optimized build process.
-- 🟦 **TypeScript**: For type safety and better development experience.
-- 🎨 **Tailwind CSS**: For styling the UI with utility-first CSS.
-- 🔤 **React Icons**: For adding icons to the project.
+- ⚛️ **React**
+- 🚀 **Vite**
+- 🟦 **TypeScript**
+- 🎨 **Tailwind CSS**
+- 🔤 **lucide React**: 
 
 ### Server:
-- 🟢 **Node.js**: Backend framework for handling API requests.
-- 🌐 **Express**: Web framework for Node.js.
-- 🟦 **TypeScript**: For server-side type safety.
-- 🔁 **Nodemon**: For live-reloading the server during development.
+- 🟢 **Node.js**
+- 🌐 **Express**
+- 🟦 **TypeScript**
+- 🔁 **Nodemon**
 
 ---
 
