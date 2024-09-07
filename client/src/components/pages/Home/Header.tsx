@@ -52,7 +52,7 @@ const Header: React.FC = () => {
             style={{ color: primaryColor }}
           >
             <img
-              src="../../../../public/logo.png"
+              src="/logo.png"
               alt="Logo"
               className="w-[60%] md:w-[72px]"
             />
@@ -116,7 +116,7 @@ const Header: React.FC = () => {
             onClick={toggleMenu}
           >
             <img
-              src="../../../../public/logo.png"
+              src="/logo.png"
               alt="Logo"
               className="object-contain"
             />

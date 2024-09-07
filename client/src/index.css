@@ -4,14 +4,14 @@
 
 @font-face {
   font-family: "Calibri";
-  src: url(".../../../public/font/Calibri\ Regular.ttf");
+  src: url("/font/Calibri\ Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Calibri";
-  src: url(".../../../public/font/Calibri\ Bold.TTF");
+  src: url("/font/Calibri\ Bold.TTF");
   font-weight: bold;
   font-style: normal;
 }
