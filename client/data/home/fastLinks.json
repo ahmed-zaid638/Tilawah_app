@@ -1,0 +1,35 @@
+[
+    {
+      "text": "تابع تقدمك من خلال الرسم البيانى و اصنع هدف لكى تتمكن من قراءة القرأن خلال شهر واحد",
+      "imageUrl": "../../../../public/icons/home/stadistics.png",
+      "link": {
+        "label": "الرئيسية",
+        "href": "#home"
+      }
+    },
+    {
+      "text": "اقرأ القرأن وتدبر معانية من خلال تفسير القرأن",
+      "imageUrl": "../../../../public/icons/home/quran1.png",
+      "link": {
+        "label": "القرأن",
+        "href": "#quran"
+      }
+    },
+    {
+      "text": "ضاعف معلوماتك الدينية من خلال مكتبة كبيرة تحتوى على ادعية واذكار وقصص الانبياء و غيرها العديد",
+      "imageUrl": "../../../../public/icons/home/books.png",
+      "link": {
+        "label": "المكتبة",
+        "href": "#library"
+      }
+    },
+    {
+      "text": "مجموعة كبيرة من اهم الاذكار اليومية و الرقية الشرعية",
+      "imageUrl": "../../../../public/icons/home/quran2.png",
+      "link": {
+        "label": "اذكار",
+        "href": "#azukar"
+      }
+    }
+  ]
+  

@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Calibri";
+  src: url(".../../../public/font/Calibri\ Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Calibri";
+  src: url(".../../../public/font/Calibri\ Bold.TTF");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  font-family: "Calibri";
+}
