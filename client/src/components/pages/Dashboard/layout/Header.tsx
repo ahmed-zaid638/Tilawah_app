@@ -15,7 +15,7 @@ function Header() {
           <Settings />
           <div className="flex items-center gap-2">
             <div className="w-10">
-              <img src="../../../../../public/profile.png" alt="" />
+              <img src="./profile.png" alt="" />
             </div>
             <div className="">
               <div className="text-black font-semibold">ندى محمد </div>
