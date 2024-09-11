@@ -1,0 +1,37 @@
+/* Customize the track of the scrollbar */
+.scroll-bar::-webkit-scrollbar-track {
+  background-color: white;
+  width: 1px;
+  border-left: 1px solid #d9d9d9;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.scroll-bar::-webkit-scrollbar-thumb {
+  background-color: #d9d9d9;
+  border-radius: 10px;
+}
+
+.scroll-bar::-webkit-scrollbar {
+  width: 7px;
+  height: 8px;
+}
+
+/* pieChart */
+.pie-chart {
+  background:
+      radial-gradient(
+          circle closest-side,
+          white 0,
+          white 42%,
+          transparent 42%,
+          transparent 78%,
+          white 0
+      ),
+      conic-gradient(
+          #5978bb 0,
+          #5978bb 71.4%,
+          #8b9bce 0,
+          #8b9bce 100%
+  )
+}

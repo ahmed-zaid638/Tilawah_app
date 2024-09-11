@@ -16,5 +16,9 @@ module.exports = {
       { allowConstantExport: true },
     ],
 
+    "prefer-const": ["error", {
+        "destructuring": "any",
+        "ignoreReadBeforeAssign": false
+    }]
   },
 }
