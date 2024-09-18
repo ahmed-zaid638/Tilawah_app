@@ -1,7 +1,7 @@
 function ProgressPie() {
   return (
     <div
-      className="w-32 h-32  flex justify-center items-center bg-red-300 translate-x-2 translate-y-2"
+      className="w-32 h-32  flex justify-center items-center bg-red-300 -translate-x-2 translate-y-2"
       style={{
         background: `
           radial-gradient(

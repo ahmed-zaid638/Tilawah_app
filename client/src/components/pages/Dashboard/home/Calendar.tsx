@@ -2,7 +2,6 @@ import { format, startOfWeek, endOfWeek, addMonths, subMonths } from "date-fns";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 
-// Arabic month names
 const arabicMonths = [
   "يناير",
   "فبراير",
@@ -26,7 +25,7 @@ function Calendar() {
     arabicMonths[currentMonth.getMonth()]
   } ${format(currentMonth, "yyyy")}`;
 
-  const weekStart = startOfWeek(currentMonth, { weekStartsOn: 0 }); 
+  const weekStart = startOfWeek(currentMonth, { weekStartsOn: 0 });
   const weekEnd = endOfWeek(currentMonth, { weekStartsOn: 0 });
 
   const handleNextMonth = () => {
@@ -58,7 +57,6 @@ function Calendar() {
       day = new Date(day.setDate(day.getDate() + 1));
     }
 
-    console.log(days[0].number);
     return (
       <div className="grid grid-cols-7 text-center">
         {days.map((day, index) => (
