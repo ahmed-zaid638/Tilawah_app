@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 interface SignupFormProps {
   name: string;
   email: string;

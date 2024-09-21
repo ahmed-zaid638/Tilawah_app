@@ -115,11 +115,7 @@ const Header: React.FC = () => {
             className="absolute bottom-0 left-[30%] w-[140px] h-[140px] md:hidden"
             onClick={toggleMenu}
           >
-            <img
-              src="/logo-green.png"
-              alt="Logo"
-              className="object-contain"
-            />
+            <img src="/logo-green.png" alt="Logo" className="object-contain" />
           </a>
         </div>
         <div className="flex-shrink-0 hidden md:block">
@@ -127,7 +123,7 @@ const Header: React.FC = () => {
             className="text-white px-5 text-[20px] py-2 rounded-md"
             style={{ backgroundColor: primaryColor }}
           >
-            تسجيل الدخول
+            <a href="/login"> تسجيل الدخول</a>
           </button>
         </div>
       </nav>
