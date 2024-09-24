@@ -5,35 +5,41 @@ import QuranIcon from "../../../Icons/QuranIcon";
 import WhishListIcon from "../../../Icons/WhishListIcon";
 import PrayingHandsIcon from "../../../Icons/PrayingHandsIcon";
 import LibraryIcon from "../../../Icons/LibraryIcon";
+import { useNavigate } from "react-router-dom";
 
 function SideBar() {
   const [activeNav, setActiveNav] = useState("home");
-
+  const navigate = useNavigate();
   const navItems = [
     {
       name: "home",
       icon: HomeIcon,
       label: "الرئيسية",
+      link: "/dashboard",
     },
     {
       name: "quran",
       icon: QuranIcon,
       label: "قران",
+      link: "/dashboard/quran",
     },
     {
       name: "library",
       icon: LibraryIcon,
       label: "المكتبة",
+      link: "/dashboard/library",
     },
     {
       name: "whishlist",
       icon: WhishListIcon,
       label: "المحفوظات",
+      link: "/dashboard/whishlist",
     },
     {
       name: "azkar",
       icon: PrayingHandsIcon,
       label: "الأذكار",
+      link: "/dashboard/azkar",
     },
   ];
 
@@ -49,7 +55,10 @@ function SideBar() {
           return (
             <div
               key={item.name}
-              onClick={() => setActiveNav(item.name)}
+              onClick={() => {
+                setActiveNav(item.name);
+                navigate(item.link);
+              }}
               className={`flex flex-col items-center cursor-pointer transition-all h-12 ${
                 activeNav === item.name ? "text-yellow-500" : "text-white"
               }`}
