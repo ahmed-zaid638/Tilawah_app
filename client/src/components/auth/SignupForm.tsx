@@ -14,6 +14,7 @@ const SignupForm: React.FC<SignupFormProps> = ({
   setName,
   setEmail,
   setPassword,
+  onSubmit,
 }) => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 p-5 ">
@@ -29,7 +30,7 @@ const SignupForm: React.FC<SignupFormProps> = ({
             </a>
           </div>
 
-          <form className="text-right">
+          <form className="text-right" onSubmit={onSubmit}>
             <div className="mb-4">
               <label
                 htmlFor="name"

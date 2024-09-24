@@ -1,14 +1,18 @@
+import { FormEvent } from "react";
+
 interface SignupFormProps {
   email: string;
   password: string;
   setEmail: (email: string) => void;
   setPassword: (password: string) => void;
+  onSubmit: (e: FormEvent<HTMLFormElement>) => void;
 }
 const LoginForm: React.FC<SignupFormProps> = ({
   email,
   password,
   setEmail,
   setPassword,
+  onSubmit,
 }) => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 p-5 ">
@@ -21,11 +25,11 @@ const LoginForm: React.FC<SignupFormProps> = ({
               انشاء حساب{" "}
             </a>
           </div>
-          <button className="flex gap-2 items-center justify-center border rounded-md w-full px-2 py-2">
+          <button className="flex gap-2 items-center justify-center border rounded-md w-full mb-5 px-2 py-2">
             <img src="./google.png" alt="" className="w-7" />
             <span className="text-lg">تسجيل الدخول عبر جوجل</span>
           </button>
-          <form className="text-right">
+          <form className="text-right" onSubmit={onSubmit}>
             <div className="mb-4">
               <label
                 htmlFor="email"
@@ -65,7 +69,7 @@ const LoginForm: React.FC<SignupFormProps> = ({
                 type="submit"
                 className="w-full bg-primary hover:bg-primary text-white text-[20px] font-bold py-2 px-4 rounded-lg transition duration-200"
               >
-                انشاء حساب
+                تسجيل الدخول
               </button>
             </div>
           </form>
