@@ -7,14 +7,16 @@ import Calendar from "./Calendar";
 
 function Home() {
   return (
-    <div className="h-[300vh]">
+    <div className="pb-10  ">
       <UserGreeting />
-      <div className="flex justify-between  gap-4 xl:gap-10 mt-5 h-[340px]">
-        <LastReading />
-        <Progress />
+      <div className="lg:flex justify-between gap-4 xl:gap-10 mt-5 ">
+        <div className="block sm:flex gap-5">
+          <LastReading />
+          <Progress />
+        </div>
         <CustomBarChart />
       </div>
-      <div className="flex w-full gap-5 mt-10 ">
+      <div className="lg:flex w-full gap-5 mt-10 ">
         <PrayingTimes />
         <Calendar />
       </div>

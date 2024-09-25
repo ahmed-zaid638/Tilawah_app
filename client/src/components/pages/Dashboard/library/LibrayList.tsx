@@ -8,7 +8,7 @@ function LibrayList() {
       {LibrariesList.map((item, index) => {
         return (
           <div key={index} className="w-full">
-            <Box name={item.name} color={item.color} imgUrl={item.imgUrl} />
+            <Box name={item.name} color={item.color} imgUrl={item.imgUrl} link={item.link}/>
           </div>
         );
       })}

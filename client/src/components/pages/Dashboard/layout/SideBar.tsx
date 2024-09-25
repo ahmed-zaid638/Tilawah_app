@@ -44,9 +44,9 @@ function SideBar() {
   ];
 
   return (
-    <div className="fixed top-0 right-0 h-full w-32 flex flex-col items-center justify-between py-4 z-20 bg-primary rounded-tl-[23px] rounded-bl-[23px] ">
+    <div className="fixed top-0 right-0 h-full w-20 md:w-32 flex flex-col items-center justify-between py-4 z-20 bg-primary rounded-tl-[23px] rounded-bl-[23px] ">
       <div className="text-white text-2xl font-bold mb-8">
-        <img src="/logo-white.png" alt="Logo" className="h-12 w-12" />
+        <img src="/logo-white.png" alt="Logo" className="w-10 md:w-12" />
       </div>
 
       <div className="flex flex-col space-y-6 -translate-y-16">
@@ -65,6 +65,7 @@ function SideBar() {
             >
               <div className="mb-1 ">
                 <IconComponent
+                 classname="w-6 md:w-auto"
                   color={activeNav === item.name ? "#FFD900" : "white"}
                 />
               </div>

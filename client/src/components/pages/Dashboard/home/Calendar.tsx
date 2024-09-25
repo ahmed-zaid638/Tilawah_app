@@ -58,7 +58,7 @@ function Calendar() {
     }
 
     return (
-      <div className="grid grid-cols-7 text-center">
+      <div className=" w-full grid grid-cols-7 text-center">
         {days.map((day, index) => (
           <div key={index} className="py-2 flex flex-col items-center gap-5 ">
             <div className="font-bold  ">{day.name}</div>
@@ -76,7 +76,7 @@ function Calendar() {
   };
 
   return (
-    <div className="border rounded-xl w-[45%] py-5">
+    <div className="border rounded-xl w-full lg:w-[40%] py-5 mt-5 lg:mt-0 min-w-[400px]">
       <div className="w-full flex justify-between px-[5%]">
         <div className="text-black text-[25px] flex gap-2">
           <span>{currentMonthFormatted}</span>

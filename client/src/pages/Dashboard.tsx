@@ -8,7 +8,7 @@ function Dashboard() {
       <SideBar />
       <main className="px-4 lg:px-12">
         <Header />
-        <div className="mr-32  py-4 h-[100vh]">
+        <div className="mr-20 md:mr-32 py-4 h-full">
           <Outlet />
         </div>
       </main>
@@ -17,3 +17,4 @@ function Dashboard() {
 }
 
 export default Dashboard;
+

@@ -17,7 +17,7 @@ const CustomBarChart = () => {
   const maxValue = Math.max(...data.map((item) => item.value));
 
   return (
-    <div className="border flex flex-col justify-between rounded-lg p-4 w-full">
+    <div className="border flex flex-col justify-between rounded-lg p-4 w-full mt-5 lg:mt-0 min-w-[400px] lg:min-w-[200px]  ">
       <div className="mb-6 text-black">
         <div className="text-[30px]">قرئ مؤخر</div>
         <div className="text-[23px]">عدد الساعات</div>
@@ -43,7 +43,7 @@ const CustomBarChart = () => {
               <div
                 className={` ${
                   item.day.en == currentDay ? "bg-primary" : "bg-[#FFED89] "
-                } w-8 rounded-t-full transition-all duration-300`}
+                } w-4 sm:w-8 rounded-t-full transition-all duration-300`}
                 style={{ height: `${(item.value / maxValue) * 100}%` }} // Scale bars
               ></div>
 

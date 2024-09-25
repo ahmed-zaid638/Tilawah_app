@@ -1,4 +1,10 @@
-function LibraryIcon({ color }: { color?: string }) {
+function LibraryIcon({
+  color,
+  classname,
+}: {
+  color?: string;
+  classname?: string;
+}) {
   return (
     <div>
       <svg
@@ -7,6 +13,7 @@ function LibraryIcon({ color }: { color?: string }) {
         viewBox="0 0 32 32"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        className={`${classname}`}
       >
         <g clipPath="url(#clip0_356_3225)">
           <path

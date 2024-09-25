@@ -3,29 +3,38 @@ import Search from "../../../common/Search";
 import { useLocation } from "react-router-dom";
 
 function Header() {
-  const { pathname } = useLocation(); // Get the current URL path
+  const { pathname } = useLocation(); 
+  console.log(pathname);
 
   const routeTitles: { [key: string]: string } = {
     "/dashboard": "الرئيسية",
     "/dashboard/quran": "القرآن",
     "/dashboard/settings": "الإعدادات",
-    "/dashboard/library": "المكتبه",
+    "/dashboard/library": "المكتبة",
+    "/dashboard/library/tests": "الاختبارات",
+    "/dashboard/library/islamic-stories": "قصص اسلامية",
+    "/dashboard/library/prophet": "محمد ﷺ",
+    "/dashboard/library/tasbih": "تسبيح",
+    "/dashboard/library/fatwa": "فتاوى",
+    "/dashboard/library/hadith": "الاحاديث",
+    "/dashboard/library/religious-questions": "اسئلة دينية",
+    "/dashboard/library/prayers": "ادعية",
+    "/dashboard/library/podcast": "بودكاست",
+    "/dashboard/library/quraa": "القراء",
+    "/dashboard/library/lectures": "خطب و محاضرات",
     "/dashboard/whishlist": "المحفوظات",
     "/dashboard/azkar": "الازكار",
-   
   };
+  
   const title = routeTitles[pathname] || "الرئيسية";
 
   return (
     <div className="mr-32 shadow-s h-24 flex items-center">
       <div className="w-full flex justify-between items-center">
-        {/* Dynamic title based on the route */}
         <h1 className="text-black font-bold text-[48px]">{title}</h1>
-
         <div className="bg-red-50">
           <Search className="w-full lg:w-[600px]" />
         </div>
-
         <div className="flex items-center justify-between gap-7">
           <Globe />
           <Settings />

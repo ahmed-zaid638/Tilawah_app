@@ -1,4 +1,4 @@
-function HomeIcon({ color }: { color?: string }) {
+function HomeIcon({ color, classname }: { color?: string; classname?: string }) {
   return (
     <div>
       <svg
@@ -6,6 +6,7 @@ function HomeIcon({ color }: { color?: string }) {
         height="32"
         viewBox="0 0 32 32"
         xmlns="http://www.w3.org/2000/svg"
+        className={`${classname}`}
       >
         <g clipPath="url(#clip0_356_3222)">
           <path

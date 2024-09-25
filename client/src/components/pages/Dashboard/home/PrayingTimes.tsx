@@ -33,7 +33,7 @@ const prayers = [
 
 function PrayingTimes() {
   return (
-    <div className="border rounded-xl px-3 lg:px-6 flex justify-between gap-5 items-end w-[55%] ">
+    <div className="border rounded-xl px-3 lg:px-6 flex justify-between gap-5 items-end w-full lg:w-[120%] min-w-[400px] ">
       {prayers.map((prayer, index) => (
         <div key={index} className="flex items-center py-4 justify-end">
           <div className="flex items-center flex-col text-right mr-4">
