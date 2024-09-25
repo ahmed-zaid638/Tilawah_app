@@ -7,6 +7,7 @@ import Home2 from "./components/pages/Dashboard/home/Home"; // Renamed for clari
 import Library from "./components/pages/Dashboard/library/Library";
 import WhishList from "./components/pages/Dashboard/whishlist/WhishList";
 import Azkar from "./components/pages/Dashboard/azkar/Azkar";
+import Quran from "./components/pages/Dashboard/quran/Quran";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/dashboard" element={<Dashboard />}>
           <Route index element={<Home2 />} />
-          <Route path="quran" element={<Library />} />
+          <Route path="quran" element={<Quran />} />
           <Route path="library" element={<Library />} />
           <Route path="whishlist" element={<WhishList />} />
           <Route path="azkar" element={<Azkar />} />

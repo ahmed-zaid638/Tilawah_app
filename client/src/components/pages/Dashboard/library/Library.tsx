@@ -1,8 +1,11 @@
+import LibrayList from "./LibrayList";
 
 function Library() {
   return (
-    <div>Library</div>
-  )
+    <div>
+      <LibrayList />
+    </div>
+  );
 }
 
-export default Library
+export default Library;

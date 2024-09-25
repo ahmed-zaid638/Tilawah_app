@@ -1,0 +1,69 @@
+[
+    {
+      "id": 1,
+      "name": "قصص اسلامية",
+      "color": "#A7E7F5",
+      "imgUrl": "/icons/dashboard/library/qa.png"
+    },
+    {
+      "id": 2,
+      "name": "محمد ﷺ",
+      "color": "#FFE0B6",
+      "imgUrl": "/icons/dashboard/library/prophet.png"
+    },
+    {
+      "id": 3,
+      "name": "اختبارات",
+      "color": "#D7E8FF",
+      "imgUrl": "/icons/dashboard/library/testing.png"
+    },
+    {
+      "id": 4,
+      "name": "تسبيح",
+      "color": "#9FFFCB",
+      "imgUrl": "/icons/dashboard/library/tasbih.png"
+    },
+    {
+      "id": 5,
+      "name": "فتاوى",
+      "color": "#8BAEFF",
+      "imgUrl": "/icons/dashboard/library/thinking.png"
+    },
+    {
+      "id": 6,
+      "name": "الاحاديث",
+      "color": "#805500",
+      "imgUrl": "/icons/dashboard/library/pattern.png"
+    },
+    {
+      "id": 7,
+      "name": "اسئلة دينية",
+      "color": "#CAFF85",
+      "imgUrl": "/icons/dashboard/library/qa.png"
+    },
+    {
+      "id": 8,
+      "name": "ادعية",
+      "color": "#14FF81",
+      "imgUrl": "/icons/dashboard/library/praying.png"
+    },
+    {
+      "id": 9,
+      "name": "بودكاست",
+      "color": "#CEECFF",
+      "imgUrl": "/icons/dashboard/library/podcast.png"
+    },
+    {
+      "id": 10,
+      "name": "القراء",
+      "color": "#FFD19E",
+      "imgUrl": "/icons/dashboard/library/adzan.png"
+    },
+    {
+      "id": 11,
+      "name": "خطب و محاضرات",
+      "color": "#FFDE89",
+      "imgUrl": "/icons/dashboard/library/muslim.png"
+    }
+  ]
+  

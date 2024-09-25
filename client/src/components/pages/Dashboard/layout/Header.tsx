@@ -31,7 +31,7 @@ function Header() {
           <Settings />
           <div className="flex items-center gap-2">
             <div className="w-10">
-              <img src="./profile.png" alt="Profile" />
+              <img src="/profile.png" alt="Profile" />
             </div>
             <div>
               <div className="text-black font-semibold">ندى محمد</div>
