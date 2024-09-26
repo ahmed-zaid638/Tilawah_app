@@ -1,8 +1,11 @@
+import StoriesList from "./StoriesList";
 
 function IslamicStories() {
   return (
-    <div>IslamicStories</div>
-  )
+    <div>
+      <StoriesList />
+    </div>
+  );
 }
 
-export default IslamicStories
+export default IslamicStories;

@@ -5,10 +5,8 @@ import Test from "../components/pages/Dashboard/home/test"; // Ensure this path 
 const LibraryRoutes = () => {
   return (
     <>
-      <Route path="library" element={<Library />}>
-        <Route index element={<Library />} />
-        <Route path="tests" element={<Test />} />
-      </Route>
+      <Route index element={<Library />} />
+      <Route path="tests" element={<Test />} />
     </>
   );
 };

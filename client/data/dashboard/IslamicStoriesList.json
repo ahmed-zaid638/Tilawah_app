@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "name": "قصص القرأن",
+      "imgUrl": "/images/dashboard/library/islamic-stories/img1.png",
+      "link": "/dashboard/library/islamic-stories/quran-stories"
+    },
+    {
+      "id": 2,
+      "name": "قصص الصحابة",
+      "imgUrl": "/images/dashboard/library/islamic-stories/img2.png",
+      "link": "/dashboard/library/islamic-stories/sahaba-stories"
+    },
+    {
+      "id": 3,
+      "name": "قصص الحيوان",
+      "imgUrl": "/images/dashboard/library/islamic-stories/img3.png",
+      "link": "/dashboard/library/islamic-stories/animal-stories"
+    },
+    {
+      "id": 4,
+      "name": "قصص الانبياء",
+      "imgUrl": "/images/dashboard/library/islamic-stories/img4.png",
+      "link": "/dashboard/library/islamic-stories/prophet-stories"
+    },
+    {
+      "id": 5,
+      "name": "خلفاء وقادة",
+      "imgUrl": "/images/dashboard/library/islamic-stories/img5.png",
+      "link": "/dashboard/library/islamic-stories/caliphs-and-leaders"
+    },
+    {
+      "id": 6,
+      "name": "قصص اسلامية منوعة",
+      "imgUrl": "/images/dashboard/library/islamic-stories/img6.png",
+      "link": "/dashboard/library/islamic-stories/misc-islamic-stories"
+    },
+    {
+      "id": 7,
+      "name": "معجزات الانبياء",
+      "imgUrl": "/images/dashboard/library/islamic-stories/img7.png",
+      "link": "/dashboard/library/islamic-stories/prophet-miracles"
+    },
+    {
+      "id": 8,
+      "name": "قصص الصحابيات",
+      "imgUrl": "/images/dashboard/library/islamic-stories/img8.png",
+      "link": "/dashboard/library/islamic-stories/sahabiyat-stories"
+    }
+]
