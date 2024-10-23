@@ -1,32 +1,12 @@
 import { Globe, Settings } from "lucide-react";
 import Search from "../../../common/Search";
 import { useLocation } from "react-router-dom";
+import useHeaderTitle from "../../../../hooks/useHeaderTitle";
 
 function Header() {
-  const { pathname } = useLocation(); 
-  console.log(pathname);
+  const { pathname } = useLocation();
+  const title = useHeaderTitle(pathname)
 
-  const routeTitles: { [key: string]: string } = {
-    "/dashboard": "الرئيسية",
-    "/dashboard/quran": "القرآن",
-    "/dashboard/settings": "الإعدادات",
-    "/dashboard/library": "المكتبة",
-    "/dashboard/library/tests": "الاختبارات",
-    "/dashboard/library/islamic-stories": "قصص اسلامية",
-    "/dashboard/library/prophet": "محمد ﷺ",
-    "/dashboard/library/tasbih": "تسبيح",
-    "/dashboard/library/fatwa": "فتاوى",
-    "/dashboard/library/hadith": "الاحاديث",
-    "/dashboard/library/religious-questions": "اسئلة دينية",
-    "/dashboard/library/prayers": "ادعية",
-    "/dashboard/library/podcast": "بودكاست",
-    "/dashboard/library/quraa": "القراء",
-    "/dashboard/library/lectures": "خطب و محاضرات",
-    "/dashboard/whishlist": "المحفوظات",
-    "/dashboard/azkar": "الازكار",
-  };
-  
-  const title = routeTitles[pathname] || "الرئيسية";
 
   return (
     <div className="mr-20 md:mr-32 shadow-s h-24 flex items-center">

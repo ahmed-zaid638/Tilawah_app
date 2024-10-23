@@ -17,7 +17,9 @@ const LibraryRoutes = () => {
     return (
         <Routes>
             <Route index element={<Library />} />
+            <Route path="test" element={<div>test</div>} />
             <Route path="islamic-stories" element={<IslamicStories />} />
+            <Route path="test" element={<div>test</div>} />
             <Route path="prophet" element={<Prophet />} />
             <Route path="tests" element={<Tests />} />
             <Route path="tasbih" element={<Tasbih />} />
@@ -28,6 +30,7 @@ const LibraryRoutes = () => {
             <Route path="podcast" element={<Podcast />} />
             <Route path="quraa" element={<Quraa />} />
             <Route path="lectures" element={<Lectures />} />
+            
         </Routes>
 
     );

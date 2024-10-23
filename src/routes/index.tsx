@@ -22,7 +22,7 @@ const routes = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "library",
+        path: "library/*",
         element: <LibraryRoutes />,
 
       },
@@ -40,10 +40,7 @@ const routes = createBrowserRouter([
       }
     ]
   },
-  {
-    path: "*",
-    element: "Not Found ",
-  },
+
 ]);
 
 export default routes;

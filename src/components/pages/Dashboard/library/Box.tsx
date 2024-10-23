@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 interface BoxProps {
   name: string;
   color: string;
@@ -14,12 +16,9 @@ function Box({ name, color, imgUrl, link }: BoxProps) {
       <div className="flex justify-center items-center p-4 py-10">
         <img src={imgUrl} alt="" className="w-16 h-16" />
       </div>
-      <a
-        href={link}
+      <Link
         className="rounded-lg py-4 flex justify-center items-center text-[#1C2821] text-2xl bg-white w-full"
-      >
-        {name}
-      </a>
+        to={link}>{name}</Link>
     </div>
   );
 }

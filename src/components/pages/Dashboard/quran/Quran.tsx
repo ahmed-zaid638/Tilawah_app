@@ -1,8 +1,11 @@
+import Player from "./Player"
+
 
 function Quran() {
   return (
-    <div>Quran</div>
+    <Player />
   )
+
 }
 
 export default Quran
