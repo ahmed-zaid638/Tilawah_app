@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import Button from "../../common/Button";
-import fastLinks from "../../../../data/home/fastLinks.json";
+import fastLinks from "../../../../data/landing/fastLinks.json";
 
 const Hero: React.FC = () => {
   return (

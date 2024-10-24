@@ -1,8 +1,10 @@
 import { Pause, Play } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
-// toggle function
+interface PlayerProps {
+    src: string
+}
 
-function Player() {
+function Player({ src}: PlayerProps) {
     const audioRef = useRef<HTMLAudioElement>(null)
     const [isPlaying, setIsPlaying] = useState(false);
 
@@ -20,12 +22,9 @@ function Player() {
     useEffect(() => {
 
     }, [audioRef])
-
-
-
     return (
         <>
-            <audio ref={audioRef} onEnded={handleEnded} src="https://podcasts.qurancentral.com/abdul-basit/abdul-basit-64-surah-114.mp3"></audio>
+            <audio ref={audioRef} onEnded={handleEnded} src={src}></audio>
             <button onClick={toggleAudio}>
                 {
                     isPlaying ? <Pause /> : <Play />

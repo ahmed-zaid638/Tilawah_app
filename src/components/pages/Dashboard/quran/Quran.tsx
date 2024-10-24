@@ -1,9 +1,12 @@
 import Player from "./Player"
-
+// https://podcasts.qurancentral.com/abdul-basit/abdul-basit-64-surah-114.mp3
 
 function Quran() {
   return (
-    <Player />
+    <div className="flex gap-1">
+      <Player src={'https://podcasts.qurancentral.com/abdul-basit/abdul-basit-64-surah-114.mp3'} />
+      <div>تشغيل الصوت</div>
+    </div>
   )
 
 }
