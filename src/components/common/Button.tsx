@@ -1,13 +1,24 @@
+interface ButtonProps {
+  text?: string;
+  color?: string;
+  bg?: string;
+  disabled?: boolean;
+  className?: string;
+  onClick?: () => void;
+}
+
 function Button({
   text = "Button",
   color = "#FFFFFF",
   bg = "#009048",
   disabled = false,
   className = "",
-}) {
+  onClick,
+}: ButtonProps) {
   return (
     <button
       className={`px-3 py-2 rounded-md text-[22px] min-w-[180px]  ${className}`}
+      onClick={onClick}
       style={{
         color: color,
         backgroundColor: bg,

@@ -12,25 +12,26 @@ import Quraa from "../components/pages/Dashboard/library/quraa/Quraa";
 import Lectures from "../components/pages/Dashboard/library/lectures/Lectures";
 import ReligiousQuestions from "../components/pages/Dashboard/library/religiousQuestions/ReligiousQuestions";
 
-
 const LibraryRoutes = () => {
-    return (
-        <Routes>
-            <Route index element={<Library />} />
-            <Route path="islamic-stories" element={<IslamicStories />} />
-            <Route path="prophet" element={<Prophet />} />
-            <Route path="tests" element={<Tests />} />
-            <Route path="tasbih" element={<Tasbih />} />
-            <Route path="fatwa" element={<Fatwa />} />
-            <Route path="hadith" element={<Hadith />} />
-            <Route path="religious-questions" element={<ReligiousQuestions />} />
-            <Route path="prayers" element={<Doaa />} />
-            <Route path="podcast" element={<Podcast />} />
-            <Route path="quraa" element={<Quraa />} />
-            <Route path="lectures" element={<Lectures />} />
-        </Routes>
-
-    );
+  return (
+    <Routes>
+      <Route index element={<Library />} />
+      <Route path="islamic-stories" element={<IslamicStories />} />
+      <Route path="prophet" element={<Prophet />} />
+      <Route path="tests">
+        <Route index element={<Tests />} />
+        <Route path=":testId" element={<div>test id</div>} />
+      </Route>
+      <Route path="tasbih" element={<Tasbih />} />
+      <Route path="fatwa" element={<Fatwa />} />
+      <Route path="hadith" element={<Hadith />} />
+      <Route path="religious-questions" element={<ReligiousQuestions />} />
+      <Route path="prayers" element={<Doaa />} />
+      <Route path="podcast" element={<Podcast />} />
+      <Route path="quraa" element={<Quraa />} />
+      <Route path="lectures" element={<Lectures />} />
+    </Routes>
+  );
 };
 
 export default LibraryRoutes;
